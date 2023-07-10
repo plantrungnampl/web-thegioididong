@@ -1,0 +1,28 @@
+
+.cart{
+    justify-content: center;
+}
+.container{
+    display: table;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.container::before,
+.container::after{
+    content:"";
+}
+
+.element{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+button{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #288ad6   ;
+    background-color: white;
+}
